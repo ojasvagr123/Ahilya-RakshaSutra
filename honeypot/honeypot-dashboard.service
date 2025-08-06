@@ -1,0 +1,14 @@
+[Unit]
+Description=Honeypot Dashboard
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu
+ExecStart=/home/ubuntu/venv/bin/python3 /home/ubuntu/honeypot_dashboard.py
+Restart=always
+Environment="PATH=/home/ubuntu/venv/bin"
+
+[Install]
+WantedBy=multi-user.target
+
