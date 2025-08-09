@@ -1,0 +1,105 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content">
+
+        <!-- USER INFO TABLE -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:background="#EEEEEE"
+            android:padding="8dp">
+
+            <TableRow>
+                <TextView android:text="Name:" android:textStyle="bold"/>
+                <TextView android:id="@+id/tvName"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Email:" android:textStyle="bold"/>
+                <TextView android:id="@+id/tvEmail"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Phone:" android:textStyle="bold"/>
+                <TextView android:id="@+id/tvPhone"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Address:" android:textStyle="bold"/>
+                <TextView android:id="@+id/tvAddress"/>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:text="WhatsApp Reports"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:id="@+id/tableWhatsapp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:background="#F9F9F9"
+                android:padding="4dp"/>
+        </HorizontalScrollView>
+
+        <!-- SMS REPORTS -->
+        <TextView
+            android:text="SMS Reports"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:id="@+id/tableSms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:background="#F9F9F9"
+                android:padding="4dp"/>
+        </HorizontalScrollView>
+
+
+        <!-- URL REPORTS -->
+        <TextView
+            android:text="URL Reports"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:id="@+id/tableUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:background="#F9F9F9"
+                android:padding="4dp"/>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+</ScrollView>

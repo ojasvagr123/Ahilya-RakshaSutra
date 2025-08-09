@@ -1,5 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Primary Brand Colors -->
+    <color name="primary_blue">#2563EB</color>
+    <color name="primary_dark">#1E40AF</color>
+    <color name="primary_light">#DBEAFE</color>
+    <color name="primary_ultralight">#EEF2FF</color>
+    <color name="background_gray">#F5F5F7</color>
+    <color name="text_dark">#333333</color>
+    <color name="text_medium">#666666</color>
+    <color name="border_gray">#CCCCCC</color>
+    <color name="purple_primary">#7C4DFF</color>
+    <color name="purple_pressed">#6C3CE6</color>
+    <color name="blue_start">#4DD0E1</color>
+    <color name="blue_end">#0277BD</color>
+    <!-- Accent Colors -->
+    <color name="accent_green">#10B981</color>
+    <color name="accent_purple">#8B5CF6</color>
+    <color name="accent_orange">#F59E0B</color>
+    <color name="accent_red">#EF4444</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="colorPrimary">#6200EE</color>
+
+    <!-- Success/Warning/Error -->
+    <color name="success_green">#059669</color>
+    <color name="success_light">#D1FAE5</color>
+    <color name="warning_orange">#F59E0B</color>
+    <color name="warning_light">#FEF3C7</color>
+    <color name="danger_red">#DC2626</color>
+    <color name="danger_light">#FEE2E2</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#111827</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_tertiary">#9CA3AF</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- Background & Surface -->
+    <color name="background_primary">#FAFBFC</color>
+    <color name="background_secondary">#F3F4F6</color>
+    <color name="surface_white">#FFFFFF</color>
+    <color name="surface_elevated">#F9FAFB</color>
+
+    <!-- Overlays -->
+    <color name="overlay_dark">#80000000</color>
+    <color name="overlay_light">#40FFFFFF</color>
 </resources>
