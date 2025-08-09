@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Ahilya-RakshaSutra</string>
+    <string-array name="locations">
+        <item>Indore</item>
+        <item>Bhopal</item>
+        <item>Mumbai</item>
+        <item>Delhi</item>
+    </string-array>
+
+    <string-array name="time_options">
+        <item>Morning</item>
+        <item>Afternoon</item>
+        <item>Evening</item>
+        <item>Night</item>
+    </string-array>
+
+    <string name="logo_text">AHILYA RAKSHA SUTRA</string>
+    <string name="app_description">A Smart City cybercrime reporting platform for quick and secure reporting of WhatsApp, SMS, and URL scams.</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
 </resources>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F7">
+
+    <!-- Main Content Container -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/footer_wave_background" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:backgroundTint="@color/blue_start"
+
+        android:padding="30dp">
+
+        <!-- Logo Container -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:backgroundTint="@color/blue_start"
+
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <!-- Logo Square -->
+            <View
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:backgroundTint="@color/blue_start"
+                android:layout_marginBottom="15dp" />
+
+            <!-- Logo Text Container -->
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/blue_start"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="AHILYA RAKSHA SUTRA"
+                android:textColor="#666666"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Description Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="60dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="4dp"
+            android:text="A Smart City cybercrime reporting platform for quick and secure reporting of WhatsApp, SMS, and URL scams."
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="20sp" />
+
+        <!-- Button Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <!-- Login Button -->
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/blue_start"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:stateListAnimator="@animator/button_elevation" />
+
+            <!-- Register Button -->
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Register"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@color/blue_start"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:stateListAnimator="@animator/button_elevation" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Footer Wave -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footer_wave_background" />
+
+</RelativeLayout>
+
+    <!--
+    Additional XML files needed:
+
+    1. res/drawable/logo_square_background.xml:
+    <?xml version="1.0" encoding="utf-8"?>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+        <solid android:color="#FFFFFF" />
+        <stroke android:width="2dp" android:color="#CCCCCC" />
+        <corners android:radius="8dp" />
+    </shape>
+
+    2. res/drawable/logo_text_background.xml:
+    <?xml version="1.0" encoding="utf-8"?>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+        <solid android:color="#FFFFFF" />
+        <stroke android:width="2dp" android:color="#CCCCCC" />
+        <corners android:radius="8dp" />
+    </shape>
+
+    3. res/drawable/purple_button_background.xml:
+    <?xml version="1.0" encoding="utf-8"?>
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:state_pressed="true">
+            <shape android:shape="rectangle">
+                <solid android:color="#6C3CE6" />
+                <corners android:radius="28dp" />
+            </shape>
+        </item>
+        <item>
+            <shape android:shape="rectangle">
+                <solid android:color="#7C4DFF" />
+                <corners android:radius="28dp" />
+            </shape>
+        </item>
+    </selector>
+
+    4. res/drawable/footer_wave_background.xml:
+    <?xml version="1.0" encoding="utf-8"?>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+        <gradient
+            android:angle="135"
+            android:startColor="#4DD0E1"
+            android:endColor="#0277BD"
+            android:type="linear" />
+    </shape>
+
+    5. res/animator/button_elevation.xml:
+    <?xml version="1.0" encoding="utf-8"?>
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:state_pressed="true">
+            <objectAnimator
+                android:propertyName="translationZ"
+                android:duration="100"
+                android:valueTo="8dp"
+                android:valueType="floatType" />
+        </item>
+        <item>
+            <objectAnimator
+                android:propertyName="translationZ"
+                android:duration="100"
+                android:valueTo="4dp"
+                android:valueType="floatType" />
+        </item>
+    </selector>
+
+    6. res/values/colors.xml:
+    <?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <color name="background_gray">#F5F5F7</color>
+        <color name="text_dark">#333333</color>
+        <color name="text_medium">#666666</color>
+        <color name="border_gray">#CCCCCC</color>
+        <color name="purple_primary">#7C4DFF</color>
+        <color name="purple_pressed">#6C3CE6</color>
+        <color name="white">#FFFFFF</color>
+        <color name="blue_start">#4DD0E1</color>
+        <color name="blue_end">#0277BD</color>
+    </resources>
+
+    7. res/values/strings.xml:
+    <?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <string name="app_name">Ahilya Raksha Sutra</string>
+        <string name="logo_text">AHILYA RAKSHA SUTRA</string>
+        <string name="app_description">A Smart City cybercrime reporting platform for quick and secure reporting of WhatsApp, SMS, and URL scams.</string>
+        <string name="login">Login</string>
+        <string name="register">Register</string>
+    </resources>
+    -->
